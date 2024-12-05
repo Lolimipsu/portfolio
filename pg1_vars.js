@@ -11,10 +11,8 @@ function updateContent(name, imageSrc) {
     document.getElementById('logo-img').alt = `${name} Logo Image`;
     // The name beside the picture
     document.getElementById('logo-sub').textContent = name;
-    // The big name at on-load
-    document.getElementById('home-name-primary').textContent = `My name is ${name}`
-    // The Get to know me section
-    document.getElementById('about-name').innerHTML = `Hi, I'm <strong>${name}</strong>.`;
+    // Footer name
+    document.getElementById('footer-name').textContent = name;
 }
 
 updateContent(name_new, imageSrc);
