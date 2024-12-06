@@ -7,6 +7,7 @@
     <title>Project 1</title> <!-- * CHANGED BY SCRIPT -->
     <meta name="description" content="Case study page of Project" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/project.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet"/>
@@ -62,7 +63,7 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Employee Retention Prediction</h1>
+        <h1 class="heading-primary">Employee Retention Prediction Model</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
             A machine learning approach using Random Forest Classifier
@@ -78,7 +79,18 @@
         <div class="project-details__content">
           <div class="project-details__content-main">
             <div class="project-details__showcase-img-cont">
-              <img src="./assets/jpeg/employee-retention.jpg" alt="Project Image" class="project-details__showcase-img" />
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 2</div>
+                  <img src="assets/jpeg/pg1/1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 2</div>
+                  <img src="assets/jpeg/pg1/2.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              </div>
             </div>
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
@@ -153,6 +165,7 @@
       </div>
     </footer>
     <script src="./index.js"></script>
-    <script src="./pg1_vars.js" defer></script>
+    <script src="./JS/pg1_vars.js" defer></script>
+    <script src="./JS/gallery.js"></script>
   </body>
 </html>
