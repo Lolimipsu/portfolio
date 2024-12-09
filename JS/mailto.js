@@ -7,7 +7,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 
     const subject = `Message from ${name}`;
     const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-    const mailtoLink = `mailto:kenchung285@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:borgaro.apl@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     window.location.href = mailtoLink;
-  });
+  }); 
