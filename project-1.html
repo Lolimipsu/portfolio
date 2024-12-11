@@ -79,17 +79,15 @@
         <div class="project-details__content">
           <div class="project-details__content-main">
             <div class="project-details__showcase-img-cont">
-              <div class="slideshow-container">
-                <div class="mySlides fade">
-                  <div class="numbertext">1 / 2</div>
-                  <img src="assets/jpeg/pg1/1.jpg" style="width:100%">
+              <div class="w3-content w3-display-container" style="max-width:800px">
+                <img class="mySlides fade" src="assets/jpeg/pg1/1.jpg" style="width:100%">
+                <img class="mySlides fade" src="assets/jpeg/pg1/2.jpg" style="width:100%">
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
                 </div>
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 2</div>
-                  <img src="assets/jpeg/pg1/2.jpg" style="width:100%">
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
+                <div class="w3-large w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-large w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</div>
               </div>
             </div>
             <div class="project-details__desc">
@@ -105,7 +103,7 @@
               <p class="project-details__desc-para">
                 To enhance the usability and accessibility of our system, we developed an <strong>interactive web application</strong>.
                 This webapp provides users with an <strong>intuitive interface</strong> to interact with the model, explore various metrics, and gain insights into the factors driving employee retention.
-                Key features of the webapp include visual representations of the model's predictions, such as bar graphs, box plots, univariate analysis (KDE plot, violin plot), confusion matrix, correlation heatmap, and variable importance plots.
+                Key features of the webapp include <strong>visual representations</strong> of the model's predictions, such as bar graphs, box plots, univariate analysis (KDE plot, violin plot), confusion matrix, correlation heatmap, and variable importance plots.
               </p>
               <p class="project-details__desc-para">
                 By integrating technical rigor with practical insights from an <strong>HR specialist</strong>, this project not only demonstrates the potential of <strong>machine learning</strong> in tackling real-world business challenges but also provides a valuable tool for organizations to better understand and address employee retention.
