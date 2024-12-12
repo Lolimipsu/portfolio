@@ -377,6 +377,7 @@ textarea {
   width: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 10px;
 }
 .projects__row-content {
   padding: 2rem 0;
