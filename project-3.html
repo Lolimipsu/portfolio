@@ -4,30 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 3</title>
+    <title>Project 3</title> <!-- * CHANGED BY SCRIPT -->
     <meta name="description" content="Case study page of Project" />
-
     <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="css/project.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet"/>
   </head>
   <body>
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
-              class="header__logo-img"
-            />
+            <img id="logo-img" class="header__logo-img" alt="Logo Image" /> <!-- * CHANGED BY SCRIPT -->
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span id="logo-sub" class="header__logo-sub">Name</span> <!-- * CHANGED BY SCRIPT -->
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -38,25 +30,15 @@
               <a href="./index.html#about" class="header__link">About </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
+              <a href="./index.html#projects" class="header__link"> Projects </a>
             </li>
             <li class="header__link-wrapper">
               <a href="./index.html#contact" class="header__link"> Contact </a>
             </li>
           </ul>
           <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
+            <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+            <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
           </div>
         </div>
       </div>
@@ -66,15 +48,12 @@
             <li class="header__sm-menu-link">
               <a href="./index.html"> Home </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#about"> About </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#projects"> Projects </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#contact"> Contact </a>
             </li>
@@ -84,80 +63,51 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 3</h1>
+        <h1 class="heading-primary">Takagi-san Fan Visual Novel Game</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            A fan visual novel game based on Soichirou Yamamoto's work.
           </p>
-        </div>
-        <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
         </div>
       </div>
     </section>
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-            <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
-              alt="Project Image"
-              class="project-details__showcase-img"
-            />
-          </div>
           <div class="project-details__content-main">
+            <div class="project-details__showcase-img-cont">
+              <div class="w3-content w3-display-container" style="max-width:800px">
+                <img class="mySlides fade" src="assets/jpeg/pg3/1.jpg" style="width:100%">
+                <img class="mySlides fade" src="assets/jpeg/pg3/2.jpg" style="width:100%">
+                <img class="mySlides fade" src="assets/jpeg/pg3/3.jpg" style="width:100%">
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                </div>
+                <div class="w3-large w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-large w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</div>
+              </div>
+            </div>
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                In this project, I <strong>led and coordinated</strong> a talented <strong>international team</strong> of 26 individuals, including <strong>developers and digital artists</strong>, in the creation of a <strong>fan game</strong> based on the "Skilled Teaser Takagi-san" series. As both <strong> project lead and programming lead</strong>, I supervised the development process, ensuring the production of clean, readable code that met <strong>high standards of quality and efficiency</strong>. My role also involved overseeing the <strong>artistic contributions</strong>, ensuring the visual elements complemented the game's narrative seamlessly.
               </p>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                Utilizing <strong>Python and Ren'Py</strong> as the primary programming languages, I guided the team through various development tasks, achieving a polished and engaging visual novel experience. The project was a <strong>collaborative effort</strong> that showcased our collective creativity and technical skills, resulting in a product that faithfully captured the spirit of the original series while offering an <strong>interactive and immersive gameplay experience</strong> for the fans of the series.
               </p>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Ren'Py</div>
+                <div class="skills__skill">GitHub</div>
                 <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
                 <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill">CSS</div>
               </div>
-            </div>
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
-              <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
             </div>
           </div>
         </div>
@@ -171,60 +121,31 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
+              <a id="linkedin-id-footer" target="_blank" rel="noreferrer" href="#"> <!-- * CHANGED BY SCRIPT -->
+                <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
+              <a id="github-id-footer" target="_blank" rel="noreferrer" href="#"><!-- * CHANGED BY SCRIPT -->
+                <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
               </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 id="footer-name" class="heading heading-sm text-lt">Name</h4> <!-- * CHANGED BY SCRIPT -->
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
             </p>
           </div>
         </div>
 
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
+          &copy; Modified Copyright 2024 Caseum Borgaro <!-- * CHANGED BY SCRIPT -->
+          Powered by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
         </div>
       </div>
     </footer>
     <script src="./index.js"></script>
+    <script src="./JS/pg1_vars.js" defer></script>
+    <script src="./JS/gallery.js"></script>
   </body>
 </html>
